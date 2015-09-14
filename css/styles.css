@@ -16,5 +16,9 @@ hr.less-badass {
 }
 
 .details {
-  visibility: hidden;
+  display: none;
+}
+
+.details2 {
+
 }

@@ -7,13 +7,13 @@ $(document).ready(function() {
 
     $("ul.locations").append("<li><span class='location'>" + newLocation.name + "</span></li>" +
                               "<div class='details'>" +
-                                "<br>" +
-                                "<p> location: " + newLocation.location + "</p>" +
-                                "<p> notes: " + newLocation.notes + "</p>" +
+                                "location: " + newLocation.location + "<br>" +
+                                "notes: " + newLocation.notes + "<br>" +
                               "</div>" );
-    $(".location").click(function() {
+    $(".location").last().click(function() {
       console.log('clicked');
-      $(".details").css('visibility', 'visible');
+      $(".details").toggle();
+
     });
   });
 });
